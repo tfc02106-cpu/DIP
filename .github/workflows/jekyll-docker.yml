@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>個人基本資料表</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #eee; }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th, td { border: 1px solid #ccc; padding: 10px; }
+        th { background: #f0f0f0; width: 120px; }
+    </style>
+</head>
+<body>
+    <h2>個人基本資料表</h2>
+    <table>
+        <tr><th>姓名</th><td></td><th>性別</th><td></td><td rowspan="3" style="width:150px; text-align:center;">照片</td></tr>
+        <tr><th>生日</th><td colspan="3">西元 年 月 日</td></tr>
+        <tr><th>國籍</th><td colspan="3"></td></tr>
+        <tr><th>手機</th><td></td><th>E-mail</th><td colspan="2"></td></tr>
+    </table>
+</body>
+</html>
