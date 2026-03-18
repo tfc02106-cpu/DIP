@@ -3,72 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人履歷表 - 智慧自動化工程系</title>
+    <title>個人履歷表 - 勤益科大智動系</title>
     <style>
         body {
-            font-family: "Microsoft JhengHei", "PMingLiU", sans-serif;
-            background-color: #f4f4f4;
+            font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
-            padding: 30px;
+            padding: 20px;
             display: flex;
             justify-content: center;
         }
-        .resume-page {
+        .resume-container {
             background-color: white;
-            width: 800px;
-            padding: 50px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 850px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
-            font-size: 28px;
-            letter-spacing: 8px;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #333;
+            font-size: 32px;
+            letter-spacing: 12px;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            border-bottom: 3px solid #2c3e50;
             padding-bottom: 10px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             table-layout: fixed;
+            margin-bottom: 20px;
         }
         th, td {
-            border: 1px solid #000;
-            padding: 10px;
+            border: 1px solid #333;
+            padding: 12px;
             font-size: 15px;
             word-wrap: break-word;
         }
         th {
-            background-color: #f9f9f9;
-            width: 100px;
+            background-color: #f2f4f7;
+            width: 110px;
             text-align: center;
+            font-weight: bold;
         }
-        .center {
-            text-align: center;
-        }
-        .photo-area {
-            width: 130px;
+        .center { text-align: center; }
+        .photo-cell {
+            width: 140px;
             text-align: center;
             vertical-align: middle;
-            color: #999;
+            color: #7f8c8d;
+            background-color: #fafafa;
         }
         .section-header {
-            background-color: #eee;
+            background-color: #34495e;
+            color: white;
             font-weight: bold;
             text-align: center;
+            letter-spacing: 5px;
         }
-        .checkbox-item {
-            margin-right: 10px;
-        }
-        .special-text {
-            color: #000;
+        .v-mark {
             font-weight: bold;
+            color: #e74c3c;
+            margin-right: 5px;
         }
+        .link-text {
+            font-size: 13px;
+            word-break: break-all;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .link-text:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-<div class="resume-page">
+<div class="resume-container">
     <h1>履歷表</h1>
     
     <table>
@@ -77,7 +86,7 @@
             <td></td>
             <th>性別</th>
             <td class="center">男 / 女</td>
-            <td rowspan="3" class="photo-area">照片貼附處</td>
+            <td rowspan="3" class="photo-cell">照片貼附處</td>
         </tr>
         <tr>
             <th>生日</th>
@@ -104,31 +113,32 @@
         </tr>
         <tr>
             <th>科系</th>
-            <td colspan="4">智慧自動化工程系 <span class="special-text">(V 日間部)</span></td>
+            <td colspan="4">智慧自動化工程系 (<span class="v-mark">V</span> 日間部)</td>
         </tr>
 
         <tr>
             <th rowspan="3">語言能力</th>
-            <td colspan="4">1. 中文：□ 流利 &ensp; □ 中等 &ensp; <span class="special-text">V 尚可</span> <small>(對應官方華語/校內華語快篩成績 B1 A2 A1)</small></td>
+            <td colspan="4">1. 中文：□ 流利 &ensp; □ 中等 &ensp; <span class="v-mark">V</span> 尚可 <small>(對應官方華語/校內華語快篩成績 B1 A2 A1)</small></td>
         </tr>
         <tr>
-            <td colspan="4">2. 英文：□ 流利 &ensp; □ 中等 &ensp; <span class="special-text">V 尚可</span></td>
+            <td colspan="4">2. 英文：□ 流利 &ensp; □ 中等 &ensp; <span class="v-mark">V</span> 尚可</td>
         </tr>
         <tr>
-            <td colspan="4">3. 印尼文：<span class="special-text">V 流利</span> &ensp; □ 中等 &ensp; □ 尚可</td>
+            <td colspan="4">3. 印尼文：<span class="v-mark">V</span> 流利 &ensp; □ 中等 &ensp; □ 尚可</td>
         </tr>
 
         <tr>
             <th>專長</th>
-            <td colspan="4">
-                電腦繪圖 SolidWorks / 機器組裝 / 電路焊接 / 文書處理 Word / 程式寫作 Python
+            <td colspan="4" style="line-height: 1.6;">
+                <b>電腦繪圖：</b>SolidWorks &emsp; <b>硬體技術：</b>機器組裝、電路焊接 <br>
+                <b>文書處理：</b>Word &emsp; <b>程式寫作：</b>Python
             </td>
         </tr>
 
         <tr>
             <td colspan="5" class="section-header">工作經歷</td>
         </tr>
-        <tr class="center" style="background-color: #fdfdfd;">
+        <tr class="center" style="background-color: #f9f9f9; font-weight: bold;">
             <td>公司名稱</td>
             <td>職務名稱</td>
             <td colspan="2">工作內容</td>
@@ -137,7 +147,7 @@
         <tr>
             <td class="center">7-11便利商店</td>
             <td class="center">實習生</td>
-            <td colspan="2">服務顧客 / 收銀 / 補貨</td>
+            <td colspan="2">服務顧客、收銀、補貨</td>
             <td class="center">年 月 至 <br> 年 月</td>
         </tr>
         <tr>
@@ -153,18 +163,24 @@
         <tr>
             <th>證照</th>
             <td colspan="4">
-                1.<br>2.<br>3.
+                1. 勞動部雙語資訊：<a href="https://www.wda.gov.tw/Bilingual.aspx?n=116&sms=10357" class="link-text" target="_blank">https://www.wda.gov.tw/Bilingual.aspx?n=116&sms=10357</a><br>
+                2.<br>
+                3.
             </td>
         </tr>
         <tr>
             <th>特殊榮譽</th>
             <td colspan="4">
-                1. 班級幹部：班代/副班代/學藝/服務股長/康樂股長/畢聯會代表<br>
+                1. 班級幹部經驗：班代 / 副班代 / 學藝 / 服務股長 / 康樂股長 / 畢聯會代表<br>
                 2.<br>
                 3.
             </td>
         </tr>
     </table>
+    
+    <div style="text-align: center; color: #95a5a6; font-size: 12px; margin-top: 20px;">
+        © 國立勤益科技大學 - 智慧自動化工程系 個人履歷
+    </div>
 </div>
 
 </body>
